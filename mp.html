@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: block;
+            justify-content: center;
+            background-color: aqua;
+        }
+        .div{
+            margin-bottom: 10px;    
+
+        }
+        select {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        body{
+            background-color: aqua;
+            color: red;
+        }
+        label{
+            color: blueviolet;
+        }
+        
+    </style>
+    <title>Registration Form</title>
+</head>
+<body>
+    <form id="form" class="form">
+        <div id="formlabel">
+        <label>Registration Form</label></div>
+        <div class="name">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your name" required>
+        </div>
+        <div>
+        <label for="mail">Email</label>
+        <input type="email" name="mail" id="mail" placeholder="Your email" required>
+        </div>
+        <div class="gender">
+            <label for="gender">Gender</label>
+            <label for="male">male</label>
+            <input type="radio" name="male" value="male">
+            <label for="female">female</label>
+            <input type="radio" name="female" value="female">
+        </div>
+        <div class="country">
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="india">India</option>
+                <option value="japan">Japan</option>
+                <option value="russia">Russia</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+       window.onclick = function(){
+            document.getElementById("formlabel").innerHTML = "<H1>REGISTRATION FORMH1</H1>";
+       }
+    </script>
+</body>
+</html>
